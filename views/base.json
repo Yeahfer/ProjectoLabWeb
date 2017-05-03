@@ -1,0 +1,24 @@
+{
+  "prestamos": {
+    "P001": {
+      "alumnosArray": [
+        "alum1ID",
+        "alum2ID",
+        "alum3ID"
+      ],
+      "profesorEncargado": "profesorID",
+      "materia": "Lab Web",
+      "dentroDelCampus": true,
+      "nombreProyecto": "Manejo Drones",
+      "descripcion": "En este proyecto se desarrolla una app para drones",
+      "fechaPrestamo": "10/04/2017",
+      "fechaEntrega": "15/04/2017",
+      "materialArray": [
+        "material1ID",
+        "maerial2ID",
+        "material3ID"
+      ],
+      "fichaImpresion": "prestamo001.pdf"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+
+<div class="banner_superior">
+    <h1>&nbsp;&nbsp;Laboratorio de Internet of Things
+        <small>CEDETEC 2do piso - ITESM CCM</small></h1>
+</div>
+
+<form action="/prestamos/insert" method="post">
+    <div class="center">
+
+            <div form-horizontal>
+                <p>El proyecto se realizar&aacute;: Fuera del campus <input type="radio" id="fuera"> Dentro del campus <input type="radio"> </p>
+                <p>Profesor a cargo del proyecto: <input id="profesor" type="text"> Fecha de entrea: <input id="fechaEntrega" type="date"></p>
+                <p>Materia del proyecto: <input id="materia" type="text"></p>
+                <label>Agregar material</label>
+                    <select>
+                        <option value="0">Oculus</option>
+                        <option value="1">Raspberry pi</option>
+                        <option value="2">Dron</option>
+                        <option value="3">Galaxy S7</option>
+                    </select>
+                    <button type="button" class="btn btn-primary" onclick="agregarElemento()">Agregar</button>
+                </p>
+            </div>
+        <table id="material" class="table table-bordered table-hover">
+            <tr>
+                <th>Cantidad y Descripci&oacute;n de equipo</th>
+            </tr>
+            <tr>
+                <th>Descripci&oacute;n</th>
+                <th>Marca</th>
+                <th>N&uacute;mero de serie</th>
+                <th>N&uacute;mero de inventario</th>
+            </tr>
+            <!--
+            <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+            </tr>
+            -->
+        </table>
+        <p>Nombre y descripci&oacute;n del projecto:</p>
+        <label for="nombrePro">Nombre</label>
+        <input type="text" id="nombrePro">
+        <textarea id="descripcion" class="form-control"></textarea>
+        <br>
+
+        <div class="form-inline">
+            Agregar integrantes del equipo
+            <select class="form-control" id="alumno">
+                {{# each items }}
+                    <option value="0">{{this.title}}</option>
+                {{/each}}
+            </select>
+            <button type="button" class="btn btn-primary" onclick="agregarEstudiante()">Agregar</button>
+        </div>
+
+        <table id="alumnos" class="table table-bordered table-hover">
+            <tr>
+                <th>Integrantes del equipo</th>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Matricula</th>
+                <th>Tel&eacute;fono</th>
+                <th>Carrera</th>
+            </tr>
+            <!--
+            <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+            </tr>
+            -->
+        </table>
+        <button type="submit" class="btn btn-primary final">Generar pr&eacute;stamo</button>
+    </div>
+</form>
+
+
+<!-- Leyenda inferior -->
+<div class="banner_inferior">
+    <br/>
+    <p>Instituto Tecnol&oacute;gico y de estudios superiores de Monterrey Campus Ciudad de M&eacute;xico. Laboratiorio de Internet of Things/Internet de las cosas. CEDETEC 2do piso. Todos los derechos reservados. Desarrollado en ITESM CCM por Ulises Torner.</p>
+    <br/>
+</div>
+<script>
+    function agregarEstudiante() {
+
+        var table = document.getElementById("alumnos");
+        var row = table.insertRow(2);
+        var cell0 = row.insertCell(0);
+        var cell1 = row.insertCell(1);
+        var cell2 = row.insertCell(2);
+        var cell3 = row.insertCell(3);
+
+        cell0.innerHTML = "Arturo";
+        cell1.innerHTML = "A01337375";
+        cell2.innerHTML = "5518497813";
+        cell3.innerHTML = "ITC";
+
+    }
+</script>
+
+<script>
+    function agregarElemento() {
+        var table = document.getElementById("material");
+        var row = table.insertRow(2);
+        var cell0 = row.insertCell(0);
+        var cell1 = row.insertCell(1);
+        var cell2 = row.insertCell(2);
+        var cell3 = row.insertCell(3);
+
+        cell0.innerHTML = "Articulo de realidad virtual";
+        cell1.innerHTML = "Oculus/Facebook";
+        cell2.innerHTML = "384535163584";
+        cell3.innerHTML = "TEC473251356";
+
+    }
+</script>
+

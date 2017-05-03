@@ -1,0 +1,105 @@
+body{
+    background-image: url("http://4.bp.blogspot.com/__ccXryaE164/TI1vYJIkCzI/AAAAAAAAAOg/ypGwupyjc-8/s1600/IMG_3925.JPG");
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: black;
+    font-family: arial;
+    font-size: 90%;
+    width: max-width;
+}
+
+button.final{
+    float: right;
+}
+
+.bs-example {
+    font-family: sans-serif;
+    position: relative;
+    margin: 100px;
+}
+.typeahead, .tt-query, .tt-hint {
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    font-size: 12px; /* Set input font size */
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    padding: 8px 12px;
+    width: 396px;
+}
+.typeahead {
+    background-color: #FFFFFF;
+}
+.typeahead:focus {
+    border: 2px solid #0097CF;
+}
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+    color: #999999;
+}
+.tt-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 422px;
+}
+.tt-suggestion {
+    font-size: 12px;  /* Set suggestion dropdown font size */
+    padding: 3px 20px;
+}
+.tt-suggestion:hover {
+    cursor: pointer;
+    background-color: #0097CF;
+    color: #FFFFFF;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+
+div.banner_superior{
+    background-color: rgba(255,255,255,0.75);
+    color: rgb(73,150,228);
+    width: max-width;
+    position: fixed;
+    padding: 10px;
+    margin: -8px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+div.banner_inferior{
+    background-color: rgb(137,151,175);
+    width: max-width;
+    color: white;
+    text-align: center;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.center{
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 150px;
+    background-color: rgba(255,255,255,0.75);
+    padding: 5%;
+    text-align: justify;
+}
+
+div.table{
+    width: 750px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: rgba(255,255,255,0.75);
+    padding: 30px;
+    text-align: justify;
+}
